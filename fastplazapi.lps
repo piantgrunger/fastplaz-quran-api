@@ -4,81 +4,75 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="10">
+    <Units Count="18">
       <Unit0>
         <Filename Value="fastplazapi.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="12"/>
-        <CursorPos X="35" Y="14"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="15" Y="8"/>
+        <UsageCount Value="22"/>
       </Unit0>
       <Unit1>
         <Filename Value="routes.pas"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="19" Y="15"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="41" Y="12"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="58"/>
-        <CursorPos X="3" Y="68"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="43"/>
+        <CursorPos X="51" Y="50"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="..\fastplaz\fastplaz\docs\README-new api project.txt"/>
-        <EditorIndex Value="8"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="None"/>
+        <Filename Value="daftarsurat.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="65"/>
+        <CursorPos Y="89"/>
+        <UsageCount Value="21"/>
       </Unit3>
       <Unit4>
-        <Filename Value="daftarsurat.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Daftarsurat"/>
-        <EditorIndex Value="7"/>
-        <CursorPos X="3" Y="14"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <Filename Value="..\fastplaz\fastplaz\docs\README-new api project.txt"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\systems\fastplaz_handler.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="144"/>
-        <CursorPos X="36" Y="158"/>
-        <UsageCount Value="10"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="323"/>
+        <CursorPos X="3" Y="334"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="60"/>
-        <CursorPos X="18" Y="59"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="199"/>
+        <CursorPos X="38" Y="199"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-web\src\base\httpdefs.pp"/>
         <UnitName Value="HTTPDefs"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="264"/>
         <CursorPos X="19" Y="394"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit7>
       <Unit8>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\json_lib.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="3" Y="47"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\inc\ustringh.inc"/>
@@ -87,126 +81,168 @@
         <CursorPos X="10" Y="135"/>
         <UsageCount Value="10"/>
       </Unit9>
+      <Unit10>
+        <Filename Value="..\cek\unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\config_lib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="128"/>
+        <CursorPos X="32" Y="138"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="15" Y="64"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="daftarsurat.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="daftarsurat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="daftarsurat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="8"/>
+        <CursorPos X="26" Y="22"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="quran.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="8"/>
+        <CursorPos X="20" Y="22"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="suratmodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="68"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit17>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="24" HistoryIndex="23">
       <Position1>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="154" Column="53" TopLine="142"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="59" TopLine="52"/>
       </Position1>
       <Position2>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
+        <Caret Line="125" Column="10" TopLine="116"/>
       </Position2>
       <Position3>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="20" Column="9"/>
+        <Caret Line="177" Column="27" TopLine="166"/>
       </Position3>
       <Position4>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="28" Column="11"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="55" Column="7" TopLine="52"/>
       </Position4>
       <Position5>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="30" Column="16"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="57" Column="4" TopLine="46"/>
       </Position5>
       <Position6>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="31" Column="17" TopLine="2"/>
+        <Caret Line="125" Column="10" TopLine="107"/>
       </Position6>
       <Position7>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="34" Column="17" TopLine="5"/>
+        <Caret Line="207" Column="4" TopLine="138"/>
       </Position7>
       <Position8>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="40" Column="14" TopLine="11"/>
+        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\systems\fastplaz_handler.pas"/>
+        <Caret Line="334" Column="3" TopLine="323"/>
       </Position8>
       <Position9>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="50" Column="22" TopLine="21"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="63" Column="18" TopLine="50"/>
       </Position9>
       <Position10>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="51" Column="22" TopLine="22"/>
+        <Filename Value="routes.pas"/>
+        <Caret Line="16" Column="51"/>
       </Position10>
       <Position11>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="52" Column="22" TopLine="23"/>
+        <Filename Value="routes.pas"/>
+        <Caret Line="12" Column="23"/>
       </Position11>
       <Position12>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="54" Column="22" TopLine="27"/>
+        <Filename Value="routes.pas"/>
+        <Caret Line="12" Column="29"/>
       </Position12>
       <Position13>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="55" Column="10" TopLine="32"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="51" Column="10" TopLine="42"/>
       </Position13>
       <Position14>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="1305" Column="40" TopLine="1291"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="9" Column="29"/>
       </Position14>
       <Position15>
-        <Filename Value="main.pas"/>
-        <Caret Line="69" Column="67" TopLine="45"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="13" Column="19" TopLine="4"/>
       </Position15>
       <Position16>
-        <Filename Value="main.pas"/>
-        <Caret Line="15" Column="5"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="67" Column="4" TopLine="54"/>
       </Position16>
       <Position17>
-        <Filename Value="daftarsurat.pas"/>
-        <Caret Line="14" Column="3"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="13" Column="5" TopLine="4"/>
       </Position17>
       <Position18>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="28" Column="15" TopLine="12"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="15" Column="37" TopLine="4"/>
       </Position18>
       <Position19>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <Caret Line="64" Column="15" TopLine="52"/>
       </Position19>
       <Position20>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="28" Column="15"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="50" Column="51" TopLine="43"/>
       </Position20>
       <Position21>
         <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="657" Column="56" TopLine="649"/>
+        <Caret Line="199" Column="38" TopLine="199"/>
       </Position21>
       <Position22>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="660" Column="15" TopLine="649"/>
+        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\systems\fastplaz_handler.pas"/>
+        <Caret Line="334" Column="3" TopLine="323"/>
       </Position22>
       <Position23>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="666" Column="23" TopLine="649"/>
+        <Filename Value="routes.pas"/>
+        <Caret Line="12" Column="29"/>
       </Position23>
       <Position24>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="675" Column="15" TopLine="649"/>
+        <Filename Value="daftarsurat.pas"/>
+        <Caret Line="22" Column="26" TopLine="8"/>
       </Position24>
-      <Position25>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\library\database_lib.pas"/>
-        <Caret Line="681" Column="23" TopLine="652"/>
-      </Position25>
-      <Position26>
-        <Filename Value="main.pas"/>
-        <Caret Line="67" Column="79" TopLine="50"/>
-      </Position26>
-      <Position27>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="78" TopLine="51"/>
-      </Position27>
-      <Position28>
-        <Filename Value="..\fastplaz\fastplaz\FastPlaz\src\systems\fastplaz_handler.pas"/>
-        <Caret Line="158" Column="36" TopLine="144"/>
-      </Position28>
-      <Position29>
-        <Filename Value="main.pas"/>
-        <Caret Line="65" Column="25" TopLine="65"/>
-      </Position29>
-      <Position30>
-        <Filename Value="main.pas"/>
-        <Caret Line="64" Column="27" TopLine="53"/>
-      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

@@ -1,4 +1,4 @@
-unit daftarsurat;
+unit quran;
 
 {$mode objfpc}{$H+}
 
@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, database_lib;
 
 type
-  TDaftarsuratModel = class(TSimpleModel)
+  TQuranModel = class(TSimpleModel)
   private
   public
     constructor Create(const DefaultTableName: string = '');
@@ -16,11 +16,11 @@ type
 
 implementation
 
-constructor TDaftarsuratModel.Create(const DefaultTableName: string = '');
+constructor TQuranModel.Create(const DefaultTableName: string = '');
 begin
   inherited Create( DefaultTableName);
-  TableName:='daftarsurat';
-  // table name = daftarsurats
+  TableName:='quran';
+  // table name = qurans
   //inherited Create('yourtablename'); // if use custom tablename
 end;
 

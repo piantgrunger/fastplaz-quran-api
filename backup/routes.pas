@@ -14,7 +14,7 @@ uses  main,daftarsuratmodule,suratmodule;
 initialization
   Route.Add( 'main', TMainModule);
    Route.Add('daftarsurat', TDaftarsuratModule);
-   Route['^/([0-9_]+)/surat/$'] := TSuratModule;
+   Route['^/([0-9_]+)/surat/$'] := TProfileModule
 
 end.
 

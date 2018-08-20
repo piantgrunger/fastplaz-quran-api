@@ -13,9 +13,6 @@
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
-    <VersionInfo>
-      <StringTable ProductVersion=""/>
-    </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
     </BuildModes>
@@ -38,7 +35,7 @@
         <PackageName Value="fastplaz_runtime"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="6">
       <Unit0>
         <Filename Value="fastplazapi.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -52,17 +49,24 @@
         <IsPartOfProject Value="True"/>
       </Unit2>
       <Unit3>
+        <Filename Value="daftarsuratmodule.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
         <Filename Value="daftarsurat.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Daftarsurat"/>
-      </Unit3>
+      </Unit4>
+      <Unit5>
+        <Filename Value="daftarsurat.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="C:\xampp2\htdocs\fastplazapi\fastplazapi"/>
+      <Filename Value="C:\xampp2\htdocs\fastplazapi\quran-api.exe" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

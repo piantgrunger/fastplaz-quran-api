@@ -7,12 +7,13 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, fpcgi, fpjson, HTTPDefs, fastplaz_handler, database_lib,Daftarsurat,lconvencoding;
+  Classes, SysUtils, fpcgi, fpjson, HTTPDefs, fastplaz_handler, database_lib
+  ;
 
 type
   TMainModule = class(TMyCustomWebModule)
   private
-    Daftarsurat : TDaftarsuratModel;
+
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
   public
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
@@ -40,48 +41,13 @@ end;
 // Init First
 procedure TMainModule.BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
 begin
-  Response.ContentType := 'application/json';
+
 end;
 
 // GET Method Handler
 procedure TMainModule.Get;
-var Json:TJSONUtil;
-  Surat:  TJSONArray;
-  s:UnicodeString;
-  i:integer;
-
 begin
-
-  DataBaseInit();
-  json := TJSONUtil.Create;
-  Daftarsurat:=TDaftarsuratModel.Create();
-  Daftarsurat.All;
-  Surat := TJSONArray.Create;
-  json['code'] := Int16(200);
-  Daftarsurat.First;
-  i:=1;
-  while not Daftarsurat.eof do
-  begin
-
-    Json['data/'+i2s(i)+'/index']:=Daftarsurat['index'];
-    Json['data/'+i2s(i)+'/surat_indonesia']:=Daftarsurat['surat_indonesia'];
-//    Json['data/'+i2s(i)+'/surat_arab']:= AnsiToUTF8(Daftarsurat.Data.FieldByName('surat_arab').AsString);
-    Json['data/'+i2s(i)+'/arti']:=Daftarsurat['arti'];
-    Json['data/'+i2s(i)+'/jumlah_ayat']:=Daftarsurat['jumlah_ayat'];
-    Json['data/'+i2s(i)+'/urutan_pewahyuan']:=Daftarsurat['urutan_pewahyuan'];
-
-
-
-
-
-    Daftarsurat.next;
-    inc(i);
-  end;
-
-  Response.Content:=json.AsJSON;
-  Json.free;
-  Daftarsurat.Free;
-
+    Response.Content:='Selamat Datang di Quran-API';
 end;
 
 // POST Method Handler
