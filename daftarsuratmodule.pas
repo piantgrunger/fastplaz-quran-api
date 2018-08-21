@@ -62,7 +62,9 @@ begin
   Surat := TJSONArray.Create;
   json['code'] := Int16(200);
   DataToJSON(fDaftarsurat.Data,Surat,false);
-  Json.ValueArray['Surat']:=Surat;
+  Json.ValueArray['content']:=Surat;
+        Response.Code:=200;
+
   Response.Content:=json.AsJSONFormated;
   Json.free;
   fDaftarsurat.Free;

@@ -5,7 +5,7 @@ program fastplazapi;
 uses
   {$IFNDEF Windows}cthreads, {$ENDIF}
   fpcgi, sysutils, fastplaz_handler, common, main, routes, daftarsuratmodule,
-   daftarsurat, daftarsurat_model, suratmodule ;
+   daftarsurat,  suratmodule ;
 
 begin
   Application.Title:='Fastplazapi';
