@@ -14,7 +14,7 @@ const
 type
   TSuratModule = class(TMyCustomWebModule)
   private
-    Fquran : TQuranModel;
+    Fquran : TquranModel;
   public
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
     destructor Destroy; override;
@@ -52,12 +52,12 @@ begin
   s := _GET['$1']; // <<-- first parameter in routing: Route['^/([0-9_]+)'] := TMainModule;
   if ((not s.isEmpty) and (s.IsNumeric)) then
   begin
-    Fquran:=TQuranModel.Create();
-    Fquran.Data.SQL.Text:='Select Quran.AyahText as AyatText,quranindonesia.AyahText as Terjemahan ,quran.VerseID as Ayat  ' +
+    Fquran:=TquranModel.Create();
+    Fquran.Data.SQL.Text:='Select quran.AyahText as AyatText,quranindonesia.AyahText as Terjemahan ,quran.VerseID as Ayat  ' +
                           ' ,concat(''http://www.everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/'',lpad(quran.suraID,3,''0''),lpad(quran.verseID,3,''0'') ,''.mp3 '')  as Recitation'+
                           ' from quran '+
-                          ' inner Join QuranIndonesia on Quran.ID=QuranIndonesia.ID  '+
-     format('where Quran.SuraID = %s',[s]);
+                          ' inner Join quranIndonesia on quran.ID=quranIndonesia.ID  '+
+     format('where quran.SuraID = %s',[s]);
      if Fquran.Open() then
     begin
       Jarray:=TJSONArray.Create;
