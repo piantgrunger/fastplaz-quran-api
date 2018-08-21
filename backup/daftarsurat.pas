@@ -19,7 +19,7 @@ implementation
 constructor TDaftarsuratModel.Create(const DefaultTableName: string = '');
 begin
   inherited Create( DefaultTableName);
-  TableName:='DaftarSurat';
+  TableName:='daftarsurat';
   // table name = daftarsurats
   //inherited Create('yourtablename'); // if use custom tablename
 end;
