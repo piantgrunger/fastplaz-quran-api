@@ -70,7 +70,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="C:\xampp2\htdocs\fastplazapi\quran-api.exe" ApplyConventions="False"/>
+      <Filename Value="public_html\quran-api.bin" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
