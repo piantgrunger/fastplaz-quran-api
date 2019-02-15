@@ -11,7 +11,7 @@ AddHandler cgi-script .pas
 AddHandler cgi-script .exe
 Options +ExecCGI
 
-DirectoryIndex fastplazapi.exe
+DirectoryIndex quran-api.bin
 
 SetEnvIf Authorization "(.*)" Authorization=$1
 SetEnvIf ClientID "(.*)" ClientID=$1
@@ -25,5 +25,5 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -l
 RewriteRule ^(.*)$ - [NC,L]
 #RewriteRule ^(.*)$ 404.php [QSA,L]
-RewriteRule ^(.*)$ fastplazapi.exe/$1 [QSA,L]
+RewriteRule ^(.*)$ quran-api.bin/$1 [QSA,L]
 

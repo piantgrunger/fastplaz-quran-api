@@ -20,7 +20,7 @@
     "default" : {
       "driver" : "MySQL 5.0",
       "hostname" : "localhost",
-	  "charset" : "utf-8",
+      "charset" : "utf-8",
       "port" : "",
       "username" : "root",
       "password" : "",

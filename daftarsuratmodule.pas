@@ -5,16 +5,16 @@ unit daftarsuratmodule;
 interface
 
 uses
-  Classes, SysUtils, html_lib, fpcgi, fpjson, HTTPDefs, fastplaz_handler, 
-    database_lib,daftarsurat,json_lib;
+  Classes, SysUtils, html_lib, fpcgi, fpjson, HTTPDefs, fastplaz_handler,
+  database_lib, daftarsurat, json_lib;
 
 type
   TDaftarsuratModule = class(TMyCustomWebModule)
 
   private
     fdaftarsurat: TDaftarsuratModel;
-    function Tag_MainContent_Handler(const TagName: string; Params: TStringList
-      ): string;
+    function Tag_MainContent_Handler(const TagName: string;
+      Params: TStringList): string;
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
   public
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
@@ -28,8 +28,7 @@ implementation
 
 uses theme_controller, common;
 
-constructor TDaftarsuratModule.CreateNew(AOwner: TComponent; CreateMode: integer
-  );
+constructor TDaftarsuratModule.CreateNew(AOwner: TComponent; CreateMode: integer);
 begin
   inherited CreateNew(AOwner, CreateMode);
   BeforeRequest := @BeforeRequestHandler;
@@ -41,32 +40,31 @@ begin
 end;
 
 // Init First
-procedure TDaftarsuratModule.BeforeRequestHandler(Sender: TObject; 
-  ARequest: TRequest);
+procedure TDaftarsuratModule.BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
 
 begin
-    Response.ContentType := 'application/json';
+  Response.ContentType := 'application/json';
 end;
 
 // GET Method Handler
 procedure TDaftarsuratModule.Get;
-var Json:TJSONUtil;
-  Surat:  TJSONArray;
-
+var
+  Json: TJSONUtil;
+  Surat: TJSONArray;
 
 begin
-  fDaftarsurat:=TDaftarsuratModel.Create();
+  fDaftarsurat := TDaftarsuratModel.Create();
   DataBaseInit();
   json := TJSONUtil.Create;
   fDaftarsurat.All;
   Surat := TJSONArray.Create;
   json['code'] := Int16(200);
-  DataToJSON(fDaftarsurat.Data,Surat,false);
-  Json.ValueArray['content']:=Surat;
-        Response.Code:=200;
+  DataToJSON(fDaftarsurat.Data, Surat, False);
+  Json.ValueArray['content'] := Surat;
+  Response.Code := 200;
 
-  Response.Content:=json.AsJSONFormated;
-  Json.free;
+  Response.Content := json.AsJSONFormated;
+  Json.Free;
   fDaftarsurat.Free;
 end;
 
@@ -76,12 +74,12 @@ begin
 
 end;
 
-function TDaftarsuratModule.Tag_MainContent_Handler(const TagName: string; 
+function TDaftarsuratModule.Tag_MainContent_Handler(const TagName: string;
   Params: TStringList): string;
 begin
 
   // your code here
-  Result:=h3('Hello "Daftarsurat" Module ... FastPlaz !');
+  Result := h3('Hello "Daftarsurat" Module ... FastPlaz !');
 
 end;
 
@@ -93,4 +91,6 @@ initialization
 
 
 end.
+
+
 
