@@ -66,6 +66,24 @@ begin
       DataToJSON(Fquran.Data,Jarray,false);
       json.ValueArray['content']:=Jarray;
     end
+ end   
+  else if ((not s.isEmpty) ) then
+  begin
+    Fquran:=TquranModel.Create();
+    Fquran.Data.SQL.Text:='Select quran.AyahText as AyatText,quranindonesia.AyahText as Terjemahan ,quran.VerseID as Ayat  ' +
+                          ' ,concat(''http://www.everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/'',lpad(quran.suraID,3,''0''),lpad(quran.verseID,3,''0'') ,''.mp3 '')  as Recitation'+
+                          ' from quran '+
+                          ' inner Join quranindonesia on quran.ID=quranindonesia.ID  '+
+    'where quranindonesia.AyahText like '+quotedstr('%'+s+'%');
+     if Fquran.Open() then
+    begin
+      Jarray:=TJSONArray.Create;
+      json['code'] := Int16(200);
+      Response.Code:=200;
+      DataToJSON(Fquran.Data,Jarray,false);
+      json.ValueArray['content']:=Jarray;
+   end
+   end
     else
     begin
        json['code'] := Int16(404);
@@ -75,7 +93,7 @@ begin
 
     end;
 
-  end;
+
 
   Response.ContentType := 'application/json';
   Response.Content := json.AsJSONFormated;
