@@ -54,7 +54,7 @@ begin
   begin
     Fquran:=TquranModel.Create();
     Fquran.Data.SQL.Text:='Select quran.AyahText as AyatText,quranindonesia.AyahText as Terjemahan ,quran.VerseID as Ayat  ' +
-                          ' ,concat(''http://www.everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/'',lpad(quran.suraID,3,''0''),lpad(quran.verseID,3,''0'') ,''.mp3 '')  as Recitation'+
+                          ' ,concat(''http://www.everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/'',lpad(quran.suraID,3,''0''),lpad(quran.verseID,3,''0'') ,''.mp3'')  as Recitation'+
                           ' from quran '+
                           ' inner Join quranindonesia on quran.ID=quranindonesia.ID  '+
      format('where quran.SuraID = %s',[s]);
